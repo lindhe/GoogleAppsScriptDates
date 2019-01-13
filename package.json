@@ -1,0 +1,25 @@
+{
+  "name": "googleappsscriptdates",
+  "version": "1.0.0",
+  "description": "Package for date handling in Google Apps Scripts",
+  "main": "dateHelpers.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindhe/GoogleAppsScriptDates.git"
+  },
+  "keywords": [
+    "date-helpers"
+  ],
+  "author": "Andreas Lindhé",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lindhe/GoogleAppsScriptDates/issues"
+  },
+  "homepage": "https://github.com/lindhe/GoogleAppsScriptDates#readme",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
