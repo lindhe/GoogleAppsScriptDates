@@ -1,5 +1,5 @@
 // -*- coding: utf-8 -*-
-// vim: syntax=javascript tabstop=2
+// vim: syntax=javascript tabstop=2 shiftwidth=2
 
 function nothing() {
   // Triggers don't like files with no named function.
