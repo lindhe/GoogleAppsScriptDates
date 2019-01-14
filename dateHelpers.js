@@ -48,12 +48,11 @@ function getDateOfNextWN(weekNumber, weekDay, year) {
   if (typeof(year) === 'undefined') year = today.getFullYear();
   var date = new Date(year,0,1);
   // The first of Jan might be in the last week of previous year.
-  // So let's fast forward until we are at week 1 of this year
-  while (date.getWeekNumber() > 1) {
+  // So let's fast forward until we are at the sunday in week 1 of this year
+  while (date.getWeekNumber() > 1 || date.getDay() != 0) {
     date.setDate(date.getDate()+1);
   }
-  // I subtract 1 because otherwise it is one day too much because of UTC
-  date.setDate(date.getDate() + 7*(weekNumber-1) + weekDay - 1);
+  date.setDate(date.getDate() + 7*(weekNumber-1) + weekDay);
   if (date < today) {
     date = getDateOfNextWN(weekNumber, weekDay, today.getFullYear() + 1);
   }
